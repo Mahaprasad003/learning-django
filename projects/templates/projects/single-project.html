@@ -1,5 +1,14 @@
 {% extends 'main.html' %}
 
 {% block content %}
-<h1>Single Project Template</h1>
+
+
+
+<h1>{{project.title}}</h1>
+<br>
+{% for tag in tags %}
+    <span style ='border: 1px solid green'>{{tag}}</span>
+{% endfor %}
+
+
 {% endblock content %}
